@@ -1,0 +1,262 @@
+
+
+ =========================================== START DEMO 1 - RIDDLES 
+
+
+
+ =================== START POPULATE COLLECTION 
+
+[
+  "Name three consecutive days without naming any of the seven days of the week. Answer: Yesterday, today, and tomorrow.",
+  "Where does today come before yesterday? Answer: In the dictionary.",
+  "I'm where yesterday follows today and tomorrow is in the middle. What am I? Answer: An English dictionary.",
+  "What is two days after the day after the day before yesterday? Answer: tomorrow"
+]
+
+ 
+
+
+ ----------------------------------------- create collection ------------------------------------------------------- 
+
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 26 Jul 2021 11:08:43 GMT
+
+{"status":"SUCCESS: Collection **riddles** created"}
+ ----------------------------------------- list collections ------------------------------------------------------- 
+
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 26 Jul 2021 11:08:43 GMT
+
+["riddles"]
+ ----------------------------------------- insert docs in collection ------------------------------------------------------- 
+
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 26 Jul 2021 11:08:47 GMT
+
+{"status":"SUCCESS: Insert into collection **riddles** "}
+ =================== FINISHED POPULATE COLLECTION 
+
+
+ ----------------------------------------- check collection names so far ------------------------------------------------------- 
+
+["riddles"]
+ ----------------------------------------- check riddles collection details ------------------------------------------------------- 
+
+{
+    "collectionName": "riddles",
+    "docViews": [
+        {
+            "id": 1,
+            "numFilteredTokens": 10,
+            "numInitialTokens": 19,
+            "text": "Name three consecutive days without naming any of the seven days of the week. Answer: Yesterday, today, and tomorrow."
+        },
+        {
+            "id": 2,
+            "numFilteredTokens": 6,
+            "numInitialTokens": 10,
+            "text": "Where does today come before yesterday? Answer: In the dictionary."
+        },
+        {
+            "id": 3,
+            "numFilteredTokens": 13,
+            "numInitialTokens": 19,
+            "text": "I'm where yesterday follows today and tomorrow is in the middle. What am I? Answer: An English dictionary."
+        },
+        {
+            "id": 4,
+            "numFilteredTokens": 7,
+            "numInitialTokens": 14,
+            "text": "What is two days after the day after the day before yesterday? Answer: tomorrow"
+        }
+    ],
+    "numDocs": 4
+}
+
+ ----------------------------------------- debug tokens of document 1 in riddles ------------------------------------------------------- 
+
+{"id":1,"startchar":0,"endchar":4,"text":"name","lemma":"name","pos":"VB","soundexcode":"N500","metaphonecode":"NM","parentdocId":1}
+{"id":2,"startchar":11,"endchar":22,"text":"consecutive","lemma":"consecutive","pos":"JJ","soundexcode":"C522","metaphonecode":"KNSKTF","parentdocId":1}
+{"id":3,"startchar":23,"endchar":27,"text":"days","lemma":"day","pos":"NNS","soundexcode":"D200","metaphonecode":"TS","parentdocId":1}
+{"id":4,"startchar":36,"endchar":42,"text":"naming","lemma":"name","pos":"VBG","soundexcode":"N552","metaphonecode":"NMNK","parentdocId":1}
+{"id":5,"startchar":60,"endchar":64,"text":"days","lemma":"day","pos":"NNS","soundexcode":"D200","metaphonecode":"TS","parentdocId":1}
+{"id":6,"startchar":72,"endchar":76,"text":"week","lemma":"week","pos":"NN","soundexcode":"W200","metaphonecode":"WK","parentdocId":1}
+{"id":7,"startchar":78,"endchar":84,"text":"answer","lemma":"answer","pos":"NN","soundexcode":"A526","metaphonecode":"ANSWR","parentdocId":1}
+{"id":8,"startchar":86,"endchar":95,"text":"yesterday","lemma":"yesterday","pos":"NN","soundexcode":"Y236","metaphonecode":"YSTRT","parentdocId":1}
+{"id":9,"startchar":97,"endchar":102,"text":"today","lemma":"today","pos":"NN","soundexcode":"T300","metaphonecode":"TT","parentdocId":1}
+{"id":10,"startchar":108,"endchar":116,"text":"tomorrow","lemma":"tomorrow","pos":"NN","soundexcode":"T560","metaphonecode":"TMR","parentdocId":1}
+
+ ----------------------------------------- debug tokens of document 2 in riddles ------------------------------------------------------- 
+
+{"id":11,"startchar":6,"endchar":10,"text":"does","lemma":"do","pos":"VBZ","soundexcode":"D200","metaphonecode":"TS","parentdocId":2}
+{"id":12,"startchar":11,"endchar":16,"text":"today","lemma":"today","pos":"NN","soundexcode":"T300","metaphonecode":"TT","parentdocId":2}
+{"id":13,"startchar":17,"endchar":21,"text":"come","lemma":"come","pos":"VBN","soundexcode":"C500","metaphonecode":"KM","parentdocId":2}
+{"id":14,"startchar":29,"endchar":38,"text":"yesterday","lemma":"yesterday","pos":"NN","soundexcode":"Y236","metaphonecode":"YSTRT","parentdocId":2}
+{"id":15,"startchar":40,"endchar":46,"text":"answer","lemma":"answer","pos":"NN","soundexcode":"A526","metaphonecode":"ANSWR","parentdocId":2}
+{"id":16,"startchar":55,"endchar":65,"text":"dictionary","lemma":"dictionary","pos":"NN","soundexcode":"D235","metaphonecode":"TKXNR","parentdocId":2}
+
+ ----------------------------------------- debug tokens of document 3 in riddles ------------------------------------------------------- 
+
+{"id":17,"startchar":0,"endchar":1,"text":"i","lemma":"i","pos":"PRP","soundexcode":"I000","metaphonecode":"I","parentdocId":3}
+{"id":18,"startchar":1,"endchar":3,"text":"'m","lemma":"be","pos":"VBP","soundexcode":"M000","metaphonecode":"M","parentdocId":3}
+{"id":19,"startchar":10,"endchar":19,"text":"yesterday","lemma":"yesterday","pos":"NN","soundexcode":"Y236","metaphonecode":"YSTRT","parentdocId":3}
+{"id":20,"startchar":20,"endchar":27,"text":"follows","lemma":"follow","pos":"VBZ","soundexcode":"F420","metaphonecode":"FLS","parentdocId":3}
+{"id":21,"startchar":28,"endchar":33,"text":"today","lemma":"today","pos":"NN","soundexcode":"T300","metaphonecode":"TT","parentdocId":3}
+{"id":22,"startchar":38,"endchar":46,"text":"tomorrow","lemma":"tomorrow","pos":"NN","soundexcode":"T560","metaphonecode":"TMR","parentdocId":3}
+{"id":23,"startchar":47,"endchar":49,"text":"is","lemma":"be","pos":"VBZ","soundexcode":"I200","metaphonecode":"IS","parentdocId":3}
+{"id":24,"startchar":57,"endchar":63,"text":"middle","lemma":"middle","pos":"NN","soundexcode":"M340","metaphonecode":"MTL","parentdocId":3}
+{"id":25,"startchar":70,"endchar":72,"text":"am","lemma":"be","pos":"VBP","soundexcode":"A500","metaphonecode":"AM","parentdocId":3}
+{"id":26,"startchar":73,"endchar":74,"text":"i","lemma":"i","pos":"PRP","soundexcode":"I000","metaphonecode":"I","parentdocId":3}
+{"id":27,"startchar":76,"endchar":82,"text":"answer","lemma":"answer","pos":"NN","soundexcode":"A526","metaphonecode":"ANSWR","parentdocId":3}
+{"id":28,"startchar":87,"endchar":94,"text":"english","lemma":"english","pos":"NNP","soundexcode":"E524","metaphonecode":"ENKLX","parentdocId":3}
+{"id":29,"startchar":95,"endchar":105,"text":"dictionary","lemma":"dictionary","pos":"NN","soundexcode":"D235","metaphonecode":"TKXNR","parentdocId":3}
+
+ ----------------------------------------- debug tokens of document 4 in riddles ------------------------------------------------------- 
+
+{"id":30,"startchar":5,"endchar":7,"text":"is","lemma":"be","pos":"VBZ","soundexcode":"I200","metaphonecode":"IS","parentdocId":4}
+{"id":31,"startchar":12,"endchar":16,"text":"days","lemma":"day","pos":"NNS","soundexcode":"D200","metaphonecode":"TS","parentdocId":4}
+{"id":32,"startchar":27,"endchar":30,"text":"day","lemma":"day","pos":"NN","soundexcode":"D000","metaphonecode":"T","parentdocId":4}
+{"id":33,"startchar":41,"endchar":44,"text":"day","lemma":"day","pos":"NN","soundexcode":"D000","metaphonecode":"T","parentdocId":4}
+{"id":34,"startchar":52,"endchar":61,"text":"yesterday","lemma":"yesterday","pos":"NN","soundexcode":"Y236","metaphonecode":"YSTRT","parentdocId":4}
+{"id":35,"startchar":63,"endchar":69,"text":"answer","lemma":"answer","pos":"NN","soundexcode":"A526","metaphonecode":"ANSWR","parentdocId":4}
+{"id":36,"startchar":71,"endchar":79,"text":"tomorrow","lemma":"tomorrow","pos":"NN","soundexcode":"T560","metaphonecode":"TMR","parentdocId":4}
+
+ ----------------------------------------- check indexed vocabulary (raw) ------------------------------------------------------- 
+
+[
+    "'m",
+    "am",
+    "answer",
+    "come",
+    "consecutive",
+    "day",
+    "days",
+    "dictionary",
+    "does",
+    "english",
+    "follows",
+    "i",
+    "is",
+    "middle",
+    "name",
+    "naming",
+    "today",
+    "tomorrow",
+    "week",
+    "yesterday"
+]
+
+ ----------------------------------------- check indexed vocabulary (lemmas) ------------------------------------------------------- 
+
+[
+    "answer",
+    "be",
+    "come",
+    "consecutive",
+    "day",
+    "dictionary",
+    "do",
+    "english",
+    "follow",
+    "i",
+    "middle",
+    "name",
+    "today",
+    "tomorrow",
+    "week",
+    "yesterday"
+]
+
+ ----------------------------------------- check indexed docs for keyword day (raw) ------------------------------------------------------- 
+
+{
+    "INDEX_HITS": [
+        {
+            "f0": "Document[ID=4, TEXT=What is two days after the day after the day before yesterday? Answer: tomorrow]",
+            "f1": "2"
+        }
+    ],
+    "JPQL_HITS": [
+        {
+            "f0": "Document[ID=4, TEXT=What is two days after the day after the day before yesterday? Answer: tomorrow]",
+            "f1": "2"
+        }
+    ]
+}
+
+ ----------------------------------------- check indexed docs for keyword day (lemma) ------------------------------------------------------- 
+
+{
+    "INDEX_HITS": [
+        {
+            "f0": "Document[ID=1, TEXT=Name three consecutive days without naming any of the seven days of the week. Answer: Yesterday, today, and tomorrow.]",
+            "f1": "2"
+        },
+        {
+            "f0": "Document[ID=4, TEXT=What is two days after the day after the day before yesterday? Answer: tomorrow]",
+            "f1": "3"
+        }
+    ],
+    "JPQL_HITS": [
+        {
+            "f0": "Document[ID=1, TEXT=Name three consecutive days without naming any of the seven days of the week. Answer: Yesterday, today, and tomorrow.]",
+            "f1": "2"
+        },
+        {
+            "f0": "Document[ID=4, TEXT=What is two days after the day after the day before yesterday? Answer: tomorrow]",
+            "f1": "3"
+        }
+    ]
+}
+
+ =================== START SEARCH COLLECTION 
+
+
+ ----------------------------------------- http://localhost:8083/search/multiterm?collection=riddles&keywords=today ------------------------------------------------------- 
+
+{"docid":2,"doctext":"Where does today come before yesterday? Answer: In the dictionary.","consolidatedScore":0.06132946421576572,"keywordsWithScores":{"today":0.06132946421576572},"scoresArray":[0.06132946421576572],"keywordsSpans":{"today":[{"f0":"11","f1":"16"}]}}
+{"docid":1,"doctext":"Name three consecutive days without naming any of the seven days of the week. Answer: Yesterday, today, and tomorrow.","consolidatedScore":0.036797678529459435,"keywordsWithScores":{"today":0.036797678529459435},"scoresArray":[0.036797678529459435],"keywordsSpans":{"today":[{"f0":"97","f1":"102"}]}}
+{"docid":3,"doctext":"I'm where yesterday follows today and tomorrow is in the middle. What am I? Answer: An English dictionary.","consolidatedScore":0.02830590656112264,"keywordsWithScores":{"today":0.02830590656112264},"scoresArray":[0.02830590656112264],"keywordsSpans":{"today":[{"f0":"28","f1":"33"}]}}
+
+
+
+ ----------------------------------------- http://localhost:8083/search/multiterm?collection=riddles&keywords=day ------------------------------------------------------- 
+
+{"docid":4,"doctext":"What is two days after the day after the day before yesterday? Answer: tomorrow","consolidatedScore":0.1997057155245768,"keywordsWithScores":{"day":0.1997057155245768},"scoresArray":[0.1997057155245768],"keywordsSpans":{"day":[{"f0":"27","f1":"30"},{"f0":"41","f1":"44"}]}}
+
+
+
+ ----------------------------------------- http://localhost:8083/search/multiterm?collection=riddles&keywords=day&bylemma=true ------------------------------------------------------- 
+
+{"docid":4,"doctext":"What is two days after the day after the day before yesterday? Answer: tomorrow","consolidatedScore":0.20448053773699817,"keywordsWithScores":{"day":0.20448053773699817},"scoresArray":[0.20448053773699817],"keywordsSpans":{"day":[{"f0":"12","f1":"16"},{"f0":"27","f1":"30"},{"f0":"41","f1":"44"}]}}
+{"docid":1,"doctext":"Name three consecutive days without naming any of the seven days of the week. Answer: Yesterday, today, and tomorrow.","consolidatedScore":0.09542425094393249,"keywordsWithScores":{"day":0.09542425094393249},"scoresArray":[0.09542425094393249],"keywordsSpans":{"day":[{"f0":"23","f1":"27"},{"f0":"60","f1":"64"}]}}
+
+
+
+ ----------------------------------------- http://localhost:8083/search/multiterm?collection=riddles&keywords=day,week&bylemma=true ------------------------------------------------------- 
+
+{"docid":4,"doctext":"What is two days after the day after the day before yesterday? Answer: tomorrow","consolidatedScore":0.048781005365413924,"keywordsWithScores":{"day":0.20448053773699817,"week":0},"scoresArray":[0.20448053773699817,0],"keywordsSpans":{"day":[{"f0":"12","f1":"16"},{"f0":"27","f1":"30"},{"f0":"41","f1":"44"}],"week":[]}}
+{"docid":1,"doctext":"Name three consecutive days without naming any of the seven days of the week. Answer: Yesterday, today, and tomorrow.","consolidatedScore":0.047192422518601215,"keywordsWithScores":{"day":0.09542425094393249,"week":0.06989700043360189},"scoresArray":[0.09542425094393249,0.06989700043360189],"keywordsSpans":{"day":[{"f0":"23","f1":"27"},{"f0":"60","f1":"64"}],"week":[{"f0":"72","f1":"76"}]}}
+
+
+
+ ----------------------------------------- http://localhost:8083/search/phonetic?collection=riddles&pronounced=tiksionari&algo=metaphone ------------------------------------------------------- 
+
+{"freq":1,"docId":2,"docText":"Where does today come before yesterday? Answer: In the dictionary."}
+{"freq":1,"docId":3,"docText":"I'm where yesterday follows today and tomorrow is in the middle. What am I? Answer: An English dictionary."}
+
+
+
+ =================== FINISHED SEARCH COLLECTION 
+
+
+
+ =========================================== DEMO 1 SUCCEEDED 
+
+

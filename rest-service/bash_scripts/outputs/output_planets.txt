@@ -1,0 +1,509 @@
+
+
+ =========================================== START DEMO 2 - PLANETS 
+
+
+
+ =================== START POPULATE COLLECTION 
+
+[
+  "One day on Mercury (the time it takes for Mercury to rotate or spin once with respect to the stars) takes 59 Earth days. One day-night cycle on Mercury takes 175.97 Earth days. Mercury makes a complete orbit around the Sun (a year in Mercury time) in just 88 Earth days.",
+  "Venus rotates very slowly on its axis – one day on Venus lasts 243 Earth days. The planet orbits the Sun faster than Earth, however, so one year on Venus takes only about 225 Earth days, making a Venusian day longer than its year! Venus rotates backward on its axis compared to most planets in our solar system. This means the Sun rises in the west and sets in the east, opposite of what we see on Earth.",
+  "A day on Earth is 24 hours. Earth makes a complete orbit around the sun (a year in Earth time) in about 365 days.",
+  "One day on Mars takes a little over 24 hours. Mars makes a complete orbit around the Sun (a year in Martian time) in 687 Earth days.",
+  "Jupiter rotates once about every 10 hours (a Jovian day), but takes about 12 Earth years to complete one orbit of the Sun (a Jovian year).",
+  "Saturn takes about 10.7 hours (no one knows precisely) to rotate on its axis once - a Saturn “day” - and 29 Earth years to orbit the sun.",
+  "Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). Like Venus, Uranus rotates east to west. But Uranus is unique in that it rotates on its side.",
+  "Neptune takes about 16 hours to rotate once (a Neptunian day), and about 165 Earth years to orbit the sun (a Neptunian year).",
+  "A year on Pluto is 248 Earth years. A day on Pluto lasts 153 hours, or about 6 Earth days.",
+  "Ceres completes one rotation around its axis every 9 hours. Ceres takes 1,682 Earth days, or 4.6 Earth years, to make one trip around the sun.",
+  "Eris takes 557 Earth years to make one trip around the Sun. The plane of Eris' orbit is well out of the plane of the solar system's planets and extends far beyond the Kuiper Belt, a zone of icy debris beyond the orbit of Neptune. As Eris orbits the Sun, it completes one rotation every 25.9 hours, making its day length similar to ours. ",
+  "Haumea takes 285 Earth years to make one trip around the Sun. As Haumea orbits the Sun, it completes one rotation every 4 hours, making it one of the fastest rotating large objects in our solar system. It is possible a massive impact billions of years ago set off Haumea's spin and created its moons. "
+]
+
+ 
+
+
+ ----------------------------------------- create collection ------------------------------------------------------- 
+
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 26 Jul 2021 11:10:18 GMT
+
+{"status":"SUCCESS: Collection **planets** created"}
+ ----------------------------------------- list collections ------------------------------------------------------- 
+
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 26 Jul 2021 11:10:18 GMT
+
+["planets"]
+ ----------------------------------------- insert docs in collection ------------------------------------------------------- 
+
+HTTP/1.1 100 
+
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 26 Jul 2021 11:10:20 GMT
+
+{"status":"SUCCESS: Insert into collection **planets** "}
+ =================== FINISHED POPULATE COLLECTION 
+
+
+ ----------------------------------------- check planets collection so far ------------------------------------------------------- 
+
+{
+    "collectionName": "planets",
+    "docViews": [
+        {
+            "id": 1,
+            "numFilteredTokens": 31,
+            "numInitialTokens": 51,
+            "text": "One day on Mercury (the time it takes for Mercury to rotate or spin once with respect to the stars) takes 59 Earth days. One day-night cycle on Mercury takes 175.97 Earth days. Mercury makes a complete orbit around the Sun (a year in Mercury time) in just 88 Earth days."
+        },
+        {
+            "id": 2,
+            "numFilteredTokens": 52,
+            "numInitialTokens": 77,
+            "text": "Venus rotates very slowly on its axis \u2013 one day on Venus lasts 243 Earth days. The planet orbits the Sun faster than Earth, however, so one year on Venus takes only about 225 Earth days, making a Venusian day longer than its year! Venus rotates backward on its axis compared to most planets in our solar system. This means the Sun rises in the west and sets in the east, opposite of what we see on Earth."
+        },
+        {
+            "id": 3,
+            "numFilteredTokens": 14,
+            "numInitialTokens": 24,
+            "text": "A day on Earth is 24 hours. Earth makes a complete orbit around the sun (a year in Earth time) in about 365 days."
+        },
+        {
+            "id": 4,
+            "numFilteredTokens": 15,
+            "numInitialTokens": 27,
+            "text": "One day on Mars takes a little over 24 hours. Mars makes a complete orbit around the Sun (a year in Martian time) in 687 Earth days."
+        },
+        {
+            "id": 5,
+            "numFilteredTokens": 16,
+            "numInitialTokens": 26,
+            "text": "Jupiter rotates once about every 10 hours (a Jovian day), but takes about 12 Earth years to complete one orbit of the Sun (a Jovian year)."
+        },
+        {
+            "id": 6,
+            "numFilteredTokens": 17,
+            "numInitialTokens": 26,
+            "text": "Saturn takes about 10.7 hours (no one knows precisely) to rotate on its axis once - a Saturn \u201cday\u201d - and 29 Earth years to orbit the sun."
+        },
+        {
+            "id": 7,
+            "numFilteredTokens": 27,
+            "numInitialTokens": 44,
+            "text": "Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). Like Venus, Uranus rotates east to west. But Uranus is unique in that it rotates on its side."
+        },
+        {
+            "id": 8,
+            "numFilteredTokens": 14,
+            "numInitialTokens": 23,
+            "text": "Neptune takes about 16 hours to rotate once (a Neptunian day), and about 165 Earth years to orbit the sun (a Neptunian year)."
+        },
+        {
+            "id": 9,
+            "numFilteredTokens": 12,
+            "numInitialTokens": 20,
+            "text": "A year on Pluto is 248 Earth years. A day on Pluto lasts 153 hours, or about 6 Earth days."
+        },
+        {
+            "id": 10,
+            "numFilteredTokens": 15,
+            "numInitialTokens": 26,
+            "text": "Ceres completes one rotation around its axis every 9 hours. Ceres takes 1,682 Earth days, or 4.6 Earth years, to make one trip around the sun."
+        },
+        {
+            "id": 11,
+            "numFilteredTokens": 38,
+            "numInitialTokens": 66,
+            "text": "Eris takes 557 Earth years to make one trip around the Sun. The plane of Eris' orbit is well out of the plane of the solar system's planets and extends far beyond the Kuiper Belt, a zone of icy debris beyond the orbit of Neptune. As Eris orbits the Sun, it completes one rotation every 25.9 hours, making its day length similar to ours. "
+        },
+        {
+            "id": 12,
+            "numFilteredTokens": 37,
+            "numInitialTokens": 56,
+            "text": "Haumea takes 285 Earth years to make one trip around the Sun. As Haumea orbits the Sun, it completes one rotation every 4 hours, making it one of the fastest rotating large objects in our solar system. It is possible a massive impact billions of years ago set off Haumea's spin and created its moons. "
+        }
+    ],
+    "numDocs": 12
+}
+
+ ----------------------------------------- debug tokens of document 5 in planets ------------------------------------------------------- 
+
+{"id":113,"startchar":0,"endchar":7,"text":"jupiter","lemma":"jupiter","pos":"NNP","soundexcode":"J136","metaphonecode":"JPTR","parentdocId":5}
+{"id":114,"startchar":8,"endchar":15,"text":"rotates","lemma":"rotate","pos":"VBZ","soundexcode":"R332","metaphonecode":"RTTS","parentdocId":5}
+{"id":115,"startchar":16,"endchar":20,"text":"once","lemma":"once","pos":"RB","soundexcode":"O520","metaphonecode":"ONS","parentdocId":5}
+{"id":116,"startchar":21,"endchar":26,"text":"about","lemma":"about","pos":"RB","soundexcode":"A130","metaphonecode":"ABT","parentdocId":5}
+{"id":117,"startchar":36,"endchar":41,"text":"hours","lemma":"hour","pos":"NNS","soundexcode":"H620","metaphonecode":"HRS","parentdocId":5}
+{"id":118,"startchar":45,"endchar":51,"text":"jovian","lemma":"jovian","pos":"JJ","soundexcode":"J150","metaphonecode":"JFN","parentdocId":5}
+{"id":119,"startchar":52,"endchar":55,"text":"day","lemma":"day","pos":"NN","soundexcode":"D000","metaphonecode":"T","parentdocId":5}
+{"id":120,"startchar":62,"endchar":67,"text":"takes","lemma":"take","pos":"VBZ","soundexcode":"T220","metaphonecode":"TKS","parentdocId":5}
+{"id":121,"startchar":68,"endchar":73,"text":"about","lemma":"about","pos":"RB","soundexcode":"A130","metaphonecode":"ABT","parentdocId":5}
+{"id":122,"startchar":77,"endchar":82,"text":"earth","lemma":"earth","pos":"NNP","soundexcode":"E630","metaphonecode":"ER0","parentdocId":5}
+{"id":123,"startchar":83,"endchar":88,"text":"years","lemma":"year","pos":"NNS","soundexcode":"Y620","metaphonecode":"YRS","parentdocId":5}
+{"id":124,"startchar":92,"endchar":100,"text":"complete","lemma":"complete","pos":"VB","soundexcode":"C514","metaphonecode":"KMPLT","parentdocId":5}
+{"id":125,"startchar":105,"endchar":110,"text":"orbit","lemma":"orbit","pos":"NN","soundexcode":"O613","metaphonecode":"ORBT","parentdocId":5}
+{"id":126,"startchar":118,"endchar":121,"text":"sun","lemma":"sun","pos":"NNP","soundexcode":"S500","metaphonecode":"SN","parentdocId":5}
+{"id":127,"startchar":125,"endchar":131,"text":"jovian","lemma":"jovian","pos":"JJ","soundexcode":"J150","metaphonecode":"JFN","parentdocId":5}
+{"id":128,"startchar":132,"endchar":136,"text":"year","lemma":"year","pos":"NN","soundexcode":"Y600","metaphonecode":"YR","parentdocId":5}
+
+ ----------------------------------------- check indexed vocabulary (lemmas) ------------------------------------------------------- 
+
+[
+    "about",
+    "ago",
+    "axis",
+    "backward",
+    "be",
+    "belt",
+    "billion",
+    "ceres",
+    "compare",
+    "complete",
+    "create",
+    "cycle",
+    "day",
+    "day-night",
+    "debris",
+    "earth",
+    "east",
+    "eris",
+    "extend",
+    "far",
+    "faster",
+    "fastest",
+    "haumea",
+    "hour",
+    "however",
+    "icy",
+    "impact",
+    "it",
+    "its",
+    "jovian",
+    "jupiter",
+    "just",
+    "know",
+    "kuiper",
+    "large",
+    "last",
+    "length",
+    "little",
+    "longer",
+    "make",
+    "mars",
+    "martian",
+    "massive",
+    "mean",
+    "mercury",
+    "moon",
+    "most",
+    "neptune",
+    "neptunian",
+    "object",
+    "once",
+    "one",
+    "only",
+    "opposite",
+    "orbit",
+    "ours",
+    "plane",
+    "planet",
+    "pluto",
+    "possible",
+    "precisely",
+    "respect",
+    "rise",
+    "rotate",
+    "rotation",
+    "saturn",
+    "see",
+    "set",
+    "side",
+    "similar",
+    "slowly",
+    "so",
+    "solar",
+    "spin",
+    "star",
+    "sun",
+    "system",
+    "take",
+    "time",
+    "trip",
+    "unique",
+    "uranian",
+    "uranus",
+    "venus",
+    "venusian",
+    "very",
+    "we",
+    "well",
+    "west",
+    "year",
+    "zone"
+]
+
+ ----------------------------------------- check indexed docs for keyword rotate (raw) ------------------------------------------------------- 
+
+{
+    "INDEX_HITS": [
+        {
+            "f0": "Document[ID=1, TEXT=One day on Mercury (the time it takes for Mercury to rotate or spin once with respect to the stars) takes 59 Earth days. One day-night cycle on Mercury takes 175.97 Earth days. Mercury makes a complete orbit around the Sun (a year in Mercury time) in just 88 Earth days.]",
+            "f1": "1"
+        },
+        {
+            "f0": "Document[ID=6, TEXT=Saturn takes about 10.7 hours (no one knows precisely) to rotate on its axis once - a Saturn \u201cday\u201d - and 29 Earth years to orbit the sun.]",
+            "f1": "1"
+        },
+        {
+            "f0": "Document[ID=7, TEXT=Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). Like Venus, Uranus rotates east to west. But Uranus is unique in that it rotates on its side.]",
+            "f1": "1"
+        },
+        {
+            "f0": "Document[ID=8, TEXT=Neptune takes about 16 hours to rotate once (a Neptunian day), and about 165 Earth years to orbit the sun (a Neptunian year).]",
+            "f1": "1"
+        }
+    ],
+    "JPQL_HITS": [
+        {
+            "f0": "Document[ID=1, TEXT=One day on Mercury (the time it takes for Mercury to rotate or spin once with respect to the stars) takes 59 Earth days. One day-night cycle on Mercury takes 175.97 Earth days. Mercury makes a complete orbit around the Sun (a year in Mercury time) in just 88 Earth days.]",
+            "f1": "1"
+        },
+        {
+            "f0": "Document[ID=6, TEXT=Saturn takes about 10.7 hours (no one knows precisely) to rotate on its axis once - a Saturn \u201cday\u201d - and 29 Earth years to orbit the sun.]",
+            "f1": "1"
+        },
+        {
+            "f0": "Document[ID=7, TEXT=Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). Like Venus, Uranus rotates east to west. But Uranus is unique in that it rotates on its side.]",
+            "f1": "1"
+        },
+        {
+            "f0": "Document[ID=8, TEXT=Neptune takes about 16 hours to rotate once (a Neptunian day), and about 165 Earth years to orbit the sun (a Neptunian year).]",
+            "f1": "1"
+        }
+    ]
+}
+
+ ----------------------------------------- check indexed docs for keyword rotate (lemma) ------------------------------------------------------- 
+
+{
+    "INDEX_HITS": [
+        {
+            "f0": "Document[ID=1, TEXT=One day on Mercury (the time it takes for Mercury to rotate or spin once with respect to the stars) takes 59 Earth days. One day-night cycle on Mercury takes 175.97 Earth days. Mercury makes a complete orbit around the Sun (a year in Mercury time) in just 88 Earth days.]",
+            "f1": "1"
+        },
+        {
+            "f0": "Document[ID=2, TEXT=Venus rotates very slowly on its axis \u2013 one day on Venus lasts 243 Earth days. The planet orbits the Sun faster than Earth, however, so one year on Venus takes only about 225 Earth days, making a Venusian day longer than its year! Venus rotates backward on its axis compared to most planets in our solar system. This means the Sun rises in the west and sets in the east, opposite of what we see on Earth.]",
+            "f1": "2"
+        },
+        {
+            "f0": "Document[ID=5, TEXT=Jupiter rotates once about every 10 hours (a Jovian day), but takes about 12 Earth years to complete one orbit of the Sun (a Jovian year).]",
+            "f1": "1"
+        },
+        {
+            "f0": "Document[ID=6, TEXT=Saturn takes about 10.7 hours (no one knows precisely) to rotate on its axis once - a Saturn \u201cday\u201d - and 29 Earth years to orbit the sun.]",
+            "f1": "1"
+        },
+        {
+            "f0": "Document[ID=7, TEXT=Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). Like Venus, Uranus rotates east to west. But Uranus is unique in that it rotates on its side.]",
+            "f1": "3"
+        },
+        {
+            "f0": "Document[ID=8, TEXT=Neptune takes about 16 hours to rotate once (a Neptunian day), and about 165 Earth years to orbit the sun (a Neptunian year).]",
+            "f1": "1"
+        },
+        {
+            "f0": "Document[ID=12, TEXT=Haumea takes 285 Earth years to make one trip around the Sun. As Haumea orbits the Sun, it completes one rotation every 4 hours, making it one of the fastest rotating large objects in our solar system. It is possible a massive impact billions of years ago set off Haumea's spin and created its moons. ]",
+            "f1": "1"
+        }
+    ],
+    "JPQL_HITS": [
+        {
+            "f0": "Document[ID=1, TEXT=One day on Mercury (the time it takes for Mercury to rotate or spin once with respect to the stars) takes 59 Earth days. One day-night cycle on Mercury takes 175.97 Earth days. Mercury makes a complete orbit around the Sun (a year in Mercury time) in just 88 Earth days.]",
+            "f1": "1"
+        },
+        {
+            "f0": "Document[ID=2, TEXT=Venus rotates very slowly on its axis \u2013 one day on Venus lasts 243 Earth days. The planet orbits the Sun faster than Earth, however, so one year on Venus takes only about 225 Earth days, making a Venusian day longer than its year! Venus rotates backward on its axis compared to most planets in our solar system. This means the Sun rises in the west and sets in the east, opposite of what we see on Earth.]",
+            "f1": "2"
+        },
+        {
+            "f0": "Document[ID=5, TEXT=Jupiter rotates once about every 10 hours (a Jovian day), but takes about 12 Earth years to complete one orbit of the Sun (a Jovian year).]",
+            "f1": "1"
+        },
+        {
+            "f0": "Document[ID=6, TEXT=Saturn takes about 10.7 hours (no one knows precisely) to rotate on its axis once - a Saturn \u201cday\u201d - and 29 Earth years to orbit the sun.]",
+            "f1": "1"
+        },
+        {
+            "f0": "Document[ID=7, TEXT=Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). Like Venus, Uranus rotates east to west. But Uranus is unique in that it rotates on its side.]",
+            "f1": "3"
+        },
+        {
+            "f0": "Document[ID=8, TEXT=Neptune takes about 16 hours to rotate once (a Neptunian day), and about 165 Earth years to orbit the sun (a Neptunian year).]",
+            "f1": "1"
+        },
+        {
+            "f0": "Document[ID=12, TEXT=Haumea takes 285 Earth years to make one trip around the Sun. As Haumea orbits the Sun, it completes one rotation every 4 hours, making it one of the fastest rotating large objects in our solar system. It is possible a massive impact billions of years ago set off Haumea's spin and created its moons. ]",
+            "f1": "1"
+        }
+    ]
+}
+
+ =================== START SEARCH COLLECTION 
+
+
+ ----------------------------------------- http://localhost:8083/search/prefix?collection=planets&prefix=rotat ------------------------------------------------------- 
+
+{"prefixedTokens":["rotate","rotates"],"docId":7,"docText":"Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). Like Venus, Uranus rotates east to west. But Uranus is unique in that it rotates on its side.","freq":3}
+{"prefixedTokens":["rotates"],"docId":2,"docText":"Venus rotates very slowly on its axis – one day on Venus lasts 243 Earth days. The planet orbits the Sun faster than Earth, however, so one year on Venus takes only about 225 Earth days, making a Venusian day longer than its year! Venus rotates backward on its axis compared to most planets in our solar system. This means the Sun rises in the west and sets in the east, opposite of what we see on Earth.","freq":2}
+{"prefixedTokens":["rotating","rotation"],"docId":12,"docText":"Haumea takes 285 Earth years to make one trip around the Sun. As Haumea orbits the Sun, it completes one rotation every 4 hours, making it one of the fastest rotating large objects in our solar system. It is possible a massive impact billions of years ago set off Haumea's spin and created its moons. ","freq":2}
+{"prefixedTokens":["rotate"],"docId":1,"docText":"One day on Mercury (the time it takes for Mercury to rotate or spin once with respect to the stars) takes 59 Earth days. One day-night cycle on Mercury takes 175.97 Earth days. Mercury makes a complete orbit around the Sun (a year in Mercury time) in just 88 Earth days.","freq":1}
+{"prefixedTokens":["rotates"],"docId":5,"docText":"Jupiter rotates once about every 10 hours (a Jovian day), but takes about 12 Earth years to complete one orbit of the Sun (a Jovian year).","freq":1}
+{"prefixedTokens":["rotate"],"docId":6,"docText":"Saturn takes about 10.7 hours (no one knows precisely) to rotate on its axis once - a Saturn “day” - and 29 Earth years to orbit the sun.","freq":1}
+{"prefixedTokens":["rotate"],"docId":8,"docText":"Neptune takes about 16 hours to rotate once (a Neptunian day), and about 165 Earth years to orbit the sun (a Neptunian year).","freq":1}
+{"prefixedTokens":["rotation"],"docId":10,"docText":"Ceres completes one rotation around its axis every 9 hours. Ceres takes 1,682 Earth days, or 4.6 Earth years, to make one trip around the sun.","freq":1}
+{"prefixedTokens":["rotation"],"docId":11,"docText":"Eris takes 557 Earth years to make one trip around the Sun. The plane of Eris' orbit is well out of the plane of the solar system's planets and extends far beyond the Kuiper Belt, a zone of icy debris beyond the orbit of Neptune. As Eris orbits the Sun, it completes one rotation every 25.9 hours, making its day length similar to ours. ","freq":1}
+
+
+
+ ----------------------------------------- http://localhost:8083/search/multiterm?collection=planets&keywords=day ------------------------------------------------------- 
+
+{"docid":9,"doctext":"A year on Pluto is 248 Earth years. A day on Pluto lasts 153 hours, or about 6 Earth days.","consolidatedScore":0.028535223401850524,"keywordsWithScores":{"day":0.028535223401850524},"scoresArray":[0.028535223401850524],"keywordsSpans":{"day":[{"f0":"38","f1":"41"}]}}
+{"docid":3,"doctext":"A day on Earth is 24 hours. Earth makes a complete orbit around the sun (a year in Earth time) in about 365 days.","consolidatedScore":0.024458762915871877,"keywordsWithScores":{"day":0.024458762915871877},"scoresArray":[0.024458762915871877],"keywordsSpans":{"day":[{"f0":"2","f1":"5"}]}}
+{"docid":8,"doctext":"Neptune takes about 16 hours to rotate once (a Neptunian day), and about 165 Earth years to orbit the sun (a Neptunian year).","consolidatedScore":0.024458762915871877,"keywordsWithScores":{"day":0.024458762915871877},"scoresArray":[0.024458762915871877],"keywordsSpans":{"day":[{"f0":"57","f1":"60"}]}}
+{"docid":4,"doctext":"One day on Mars takes a little over 24 hours. Mars makes a complete orbit around the Sun (a year in Martian time) in 687 Earth days.","consolidatedScore":0.022828178721480418,"keywordsWithScores":{"day":0.022828178721480418},"scoresArray":[0.022828178721480418],"keywordsSpans":{"day":[{"f0":"4","f1":"7"}]}}
+{"docid":5,"doctext":"Jupiter rotates once about every 10 hours (a Jovian day), but takes about 12 Earth years to complete one orbit of the Sun (a Jovian year).","consolidatedScore":0.021401417551387893,"keywordsWithScores":{"day":0.021401417551387893},"scoresArray":[0.021401417551387893],"keywordsSpans":{"day":[{"f0":"52","f1":"55"}]}}
+{"docid":6,"doctext":"Saturn takes about 10.7 hours (no one knows precisely) to rotate on its axis once - a Saturn “day” - and 29 Earth years to orbit the sun.","consolidatedScore":0.02014251063660037,"keywordsWithScores":{"day":0.02014251063660037},"scoresArray":[0.02014251063660037],"keywordsSpans":{"day":[{"f0":"94","f1":"97"}]}}
+{"docid":2,"doctext":"Venus rotates very slowly on its axis – one day on Venus lasts 243 Earth days. The planet orbits the Sun faster than Earth, however, so one year on Venus takes only about 225 Earth days, making a Venusian day longer than its year! Venus rotates backward on its axis compared to most planets in our solar system. This means the Sun rises in the west and sets in the east, opposite of what we see on Earth.","consolidatedScore":0.013170103108546397,"keywordsWithScores":{"day":0.013170103108546397},"scoresArray":[0.013170103108546397],"keywordsSpans":{"day":[{"f0":"44","f1":"47"},{"f0":"205","f1":"208"}]}}
+{"docid":7,"doctext":"Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). Like Venus, Uranus rotates east to west. But Uranus is unique in that it rotates on its side.","consolidatedScore":0.012682321511933565,"keywordsWithScores":{"day":0.012682321511933565},"scoresArray":[0.012682321511933565],"keywordsSpans":{"day":[{"f0":"54","f1":"57"}]}}
+{"docid":1,"doctext":"One day on Mercury (the time it takes for Mercury to rotate or spin once with respect to the stars) takes 59 Earth days. One day-night cycle on Mercury takes 175.97 Earth days. Mercury makes a complete orbit around the Sun (a year in Mercury time) in just 88 Earth days.","consolidatedScore":0.011045892929748589,"keywordsWithScores":{"day":0.011045892929748589},"scoresArray":[0.011045892929748589],"keywordsSpans":{"day":[{"f0":"4","f1":"7"}]}}
+{"docid":11,"doctext":"Eris takes 557 Earth years to make one trip around the Sun. The plane of Eris' orbit is well out of the plane of the solar system's planets and extends far beyond the Kuiper Belt, a zone of icy debris beyond the orbit of Neptune. As Eris orbits the Sun, it completes one rotation every 25.9 hours, making its day length similar to ours. ","consolidatedScore":0.009011123179531743,"keywordsWithScores":{"day":0.009011123179531743},"scoresArray":[0.009011123179531743],"keywordsSpans":{"day":[{"f0":"309","f1":"312"}]}}
+
+
+
+ ----------------------------------------- http://localhost:8083/search/multiterm?collection=planets&keywords=day&bylemma=true ------------------------------------------------------- 
+
+{"docid":9,"doctext":"A year on Pluto is 248 Earth years. A day on Pluto lasts 153 hours, or about 6 Earth days.","consolidatedScore":0.05338919180989463,"keywordsWithScores":{"day":0.05338919180989463},"scoresArray":[0.05338919180989463],"keywordsSpans":{"day":[{"f0":"38","f1":"41"},{"f0":"85","f1":"89"}]}}
+{"docid":3,"doctext":"A day on Earth is 24 hours. Earth makes a complete orbit around the sun (a year in Earth time) in about 365 days.","consolidatedScore":0.04576216440848111,"keywordsWithScores":{"day":0.04576216440848111},"scoresArray":[0.04576216440848111],"keywordsSpans":{"day":[{"f0":"2","f1":"5"},{"f0":"108","f1":"112"}]}}
+{"docid":4,"doctext":"One day on Mars takes a little over 24 hours. Mars makes a complete orbit around the Sun (a year in Martian time) in 687 Earth days.","consolidatedScore":0.042711353447915705,"keywordsWithScores":{"day":0.042711353447915705},"scoresArray":[0.042711353447915705],"keywordsSpans":{"day":[{"f0":"4","f1":"7"},{"f0":"127","f1":"131"}]}}
+{"docid":1,"doctext":"One day on Mercury (the time it takes for Mercury to rotate or spin once with respect to the stars) takes 59 Earth days. One day-night cycle on Mercury takes 175.97 Earth days. Mercury makes a complete orbit around the Sun (a year in Mercury time) in just 88 Earth days.","consolidatedScore":0.041333567852821655,"keywordsWithScores":{"day":0.041333567852821655},"scoresArray":[0.041333567852821655],"keywordsSpans":{"day":[{"f0":"4","f1":"7"},{"f0":"115","f1":"119"},{"f0":"171","f1":"175"},{"f0":"265","f1":"269"}]}}
+{"docid":2,"doctext":"Venus rotates very slowly on its axis – one day on Venus lasts 243 Earth days. The planet orbits the Sun faster than Earth, however, so one year on Venus takes only about 225 Earth days, making a Venusian day longer than its year! Venus rotates backward on its axis compared to most planets in our solar system. This means the Sun rises in the west and sets in the east, opposite of what we see on Earth.","consolidatedScore":0.024641165450720603,"keywordsWithScores":{"day":0.024641165450720603},"scoresArray":[0.024641165450720603],"keywordsSpans":{"day":[{"f0":"44","f1":"47"},{"f0":"73","f1":"77"},{"f0":"181","f1":"185"},{"f0":"205","f1":"208"}]}}
+{"docid":8,"doctext":"Neptune takes about 16 hours to rotate once (a Neptunian day), and about 165 Earth years to orbit the sun (a Neptunian year).","consolidatedScore":0.022881082204240556,"keywordsWithScores":{"day":0.022881082204240556},"scoresArray":[0.022881082204240556],"keywordsSpans":{"day":[{"f0":"57","f1":"60"}]}}
+{"docid":10,"doctext":"Ceres completes one rotation around its axis every 9 hours. Ceres takes 1,682 Earth days, or 4.6 Earth years, to make one trip around the sun.","consolidatedScore":0.021355676723957853,"keywordsWithScores":{"day":0.021355676723957853},"scoresArray":[0.021355676723957853],"keywordsSpans":{"day":[{"f0":"84","f1":"88"}]}}
+{"docid":5,"doctext":"Jupiter rotates once about every 10 hours (a Jovian day), but takes about 12 Earth years to complete one orbit of the Sun (a Jovian year).","consolidatedScore":0.020020946928710488,"keywordsWithScores":{"day":0.020020946928710488},"scoresArray":[0.020020946928710488],"keywordsSpans":{"day":[{"f0":"52","f1":"55"}]}}
+{"docid":6,"doctext":"Saturn takes about 10.7 hours (no one knows precisely) to rotate on its axis once - a Saturn “day” - and 29 Earth years to orbit the sun.","consolidatedScore":0.018843244168198107,"keywordsWithScores":{"day":0.018843244168198107},"scoresArray":[0.018843244168198107],"keywordsSpans":{"day":[{"f0":"94","f1":"97"}]}}
+{"docid":7,"doctext":"Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). Like Venus, Uranus rotates east to west. But Uranus is unique in that it rotates on its side.","consolidatedScore":0.011864264846643251,"keywordsWithScores":{"day":0.011864264846643251},"scoresArray":[0.011864264846643251],"keywordsSpans":{"day":[{"f0":"54","f1":"57"}]}}
+{"docid":11,"doctext":"Eris takes 557 Earth years to make one trip around the Sun. The plane of Eris' orbit is well out of the plane of the solar system's planets and extends far beyond the Kuiper Belt, a zone of icy debris beyond the orbit of Neptune. As Eris orbits the Sun, it completes one rotation every 25.9 hours, making its day length similar to ours. ","consolidatedScore":0.008429872391035995,"keywordsWithScores":{"day":0.008429872391035995},"scoresArray":[0.008429872391035995],"keywordsSpans":{"day":[{"f0":"309","f1":"312"}]}}
+
+
+
+ ----------------------------------------- http://localhost:8083/search/multiterm?collection=planets&keywords=rotate ------------------------------------------------------- 
+
+{"docid":8,"doctext":"Neptune takes about 16 hours to rotate once (a Neptunian day), and about 165 Earth years to orbit the sun (a Neptunian year).","consolidatedScore":0.043004285094854454,"keywordsWithScores":{"rotate":0.043004285094854454},"scoresArray":[0.043004285094854454],"keywordsSpans":{"rotate":[{"f0":"32","f1":"38"}]}}
+{"docid":6,"doctext":"Saturn takes about 10.7 hours (no one knows precisely) to rotate on its axis once - a Saturn “day” - and 29 Earth years to orbit the sun.","consolidatedScore":0.0354152936075272,"keywordsWithScores":{"rotate":0.0354152936075272},"scoresArray":[0.0354152936075272],"keywordsSpans":{"rotate":[{"f0":"58","f1":"64"}]}}
+{"docid":7,"doctext":"Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). Like Venus, Uranus rotates east to west. But Uranus is unique in that it rotates on its side.","consolidatedScore":0.02229851819733194,"keywordsWithScores":{"rotate":0.02229851819733194},"scoresArray":[0.02229851819733194],"keywordsSpans":{"rotate":[{"f0":"31","f1":"37"}]}}
+{"docid":1,"doctext":"One day on Mercury (the time it takes for Mercury to rotate or spin once with respect to the stars) takes 59 Earth days. One day-night cycle on Mercury takes 175.97 Earth days. Mercury makes a complete orbit around the Sun (a year in Mercury time) in just 88 Earth days.","consolidatedScore":0.019421290042837495,"keywordsWithScores":{"rotate":0.019421290042837495},"scoresArray":[0.019421290042837495],"keywordsSpans":{"rotate":[{"f0":"53","f1":"59"}]}}
+
+
+
+ ----------------------------------------- http://localhost:8083/search/multiterm?collection=planets&keywords=rotate&bylemma=true ------------------------------------------------------- 
+
+{"docid":7,"doctext":"Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). Like Venus, Uranus rotates east to west. But Uranus is unique in that it rotates on its side.","consolidatedScore":0.048183951215396904,"keywordsWithScores":{"rotate":0.048183951215396904},"scoresArray":[0.048183951215396904],"keywordsSpans":{"rotate":[{"f0":"31","f1":"37"},{"f0":"154","f1":"161"},{"f0":"208","f1":"215"}]}}
+{"docid":8,"doctext":"Neptune takes about 16 hours to rotate once (a Neptunian day), and about 165 Earth years to orbit the sun (a Neptunian year).","consolidatedScore":0.03097539720989801,"keywordsWithScores":{"rotate":0.03097539720989801},"scoresArray":[0.03097539720989801],"keywordsSpans":{"rotate":[{"f0":"32","f1":"38"}]}}
+{"docid":5,"doctext":"Jupiter rotates once about every 10 hours (a Jovian day), but takes about 12 Earth years to complete one orbit of the Sun (a Jovian year).","consolidatedScore":0.02710347255866076,"keywordsWithScores":{"rotate":0.02710347255866076},"scoresArray":[0.02710347255866076],"keywordsSpans":{"rotate":[{"f0":"8","f1":"15"}]}}
+{"docid":6,"doctext":"Saturn takes about 10.7 hours (no one knows precisely) to rotate on its axis once - a Saturn “day” - and 29 Earth years to orbit the sun.","consolidatedScore":0.02550915064344542,"keywordsWithScores":{"rotate":0.02550915064344542},"scoresArray":[0.02550915064344542],"keywordsSpans":{"rotate":[{"f0":"58","f1":"64"}]}}
+{"docid":2,"doctext":"Venus rotates very slowly on its axis – one day on Venus lasts 243 Earth days. The planet orbits the Sun faster than Earth, however, so one year on Venus takes only about 225 Earth days, making a Venusian day longer than its year! Venus rotates backward on its axis compared to most planets in our solar system. This means the Sun rises in the west and sets in the east, opposite of what we see on Earth.","consolidatedScore":0.01667906003609893,"keywordsWithScores":{"rotate":0.01667906003609893},"scoresArray":[0.01667906003609893],"keywordsSpans":{"rotate":[{"f0":"6","f1":"13"},{"f0":"237","f1":"244"}]}}
+{"docid":1,"doctext":"One day on Mercury (the time it takes for Mercury to rotate or spin once with respect to the stars) takes 59 Earth days. One day-night cycle on Mercury takes 175.97 Earth days. Mercury makes a complete orbit around the Sun (a year in Mercury time) in just 88 Earth days.","consolidatedScore":0.013988889062534586,"keywordsWithScores":{"rotate":0.013988889062534586},"scoresArray":[0.013988889062534586],"keywordsSpans":{"rotate":[{"f0":"53","f1":"59"}]}}
+{"docid":12,"doctext":"Haumea takes 285 Earth years to make one trip around the Sun. As Haumea orbits the Sun, it completes one rotation every 4 hours, making it one of the fastest rotating large objects in our solar system. It is possible a massive impact billions of years ago set off Haumea's spin and created its moons. ","consolidatedScore":0.011720420565907356,"keywordsWithScores":{"rotate":0.011720420565907356},"scoresArray":[0.011720420565907356],"keywordsSpans":{"rotate":[{"f0":"158","f1":"166"}]}}
+
+
+
+ ----------------------------------------- http://localhost:8083/search/multiterm?collection=planets&keywords=rotate,day&bylemma=true ------------------------------------------------------- 
+
+{"docid":7,"doctext":"Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). Like Venus, Uranus rotates east to west. But Uranus is unique in that it rotates on its side.","consolidatedScore":0.01234788973101735,"keywordsWithScores":{"rotate":0.048183951215396904,"day":0.011864264846643251},"scoresArray":[0.048183951215396904,0.011864264846643251],"keywordsSpans":{"rotate":[{"f0":"31","f1":"37"},{"f0":"154","f1":"161"},{"f0":"208","f1":"215"}],"day":[{"f0":"54","f1":"57"}]}}
+{"docid":8,"doctext":"Neptune takes about 16 hours to rotate once (a Neptunian day), and about 165 Earth years to orbit the sun (a Neptunian year).","consolidatedScore":0.0103811340860372,"keywordsWithScores":{"rotate":0.03097539720989801,"day":0.022881082204240556},"scoresArray":[0.03097539720989801,0.022881082204240556],"keywordsSpans":{"rotate":[{"f0":"32","f1":"38"}],"day":[{"f0":"57","f1":"60"}]}}
+{"docid":1,"doctext":"One day on Mercury (the time it takes for Mercury to rotate or spin once with respect to the stars) takes 59 Earth days. One day-night cycle on Mercury takes 175.97 Earth days. Mercury makes a complete orbit around the Sun (a year in Mercury time) in just 88 Earth days.","consolidatedScore":0.009653477113505216,"keywordsWithScores":{"rotate":0.013988889062534586,"day":0.041333567852821655},"scoresArray":[0.013988889062534586,0.041333567852821655],"keywordsSpans":{"rotate":[{"f0":"53","f1":"59"}],"day":[{"f0":"4","f1":"7"},{"f0":"115","f1":"119"},{"f0":"171","f1":"175"},{"f0":"265","f1":"269"}]}}
+{"docid":5,"doctext":"Jupiter rotates once about every 10 hours (a Jovian day), but takes about 12 Earth years to complete one orbit of the Sun (a Jovian year).","consolidatedScore":0.00908349232528255,"keywordsWithScores":{"rotate":0.02710347255866076,"day":0.020020946928710488},"scoresArray":[0.02710347255866076,0.020020946928710488],"keywordsSpans":{"rotate":[{"f0":"8","f1":"15"}],"day":[{"f0":"52","f1":"55"}]}}
+{"docid":9,"doctext":"A year on Pluto is 248 Earth years. A day on Pluto lasts 153 hours, or about 6 Earth days.","consolidatedScore":0.00855121740634116,"keywordsWithScores":{"rotate":0,"day":0.05338919180989463},"scoresArray":[0,0.05338919180989463],"keywordsSpans":{"rotate":[],"day":[{"f0":"38","f1":"41"},{"f0":"85","f1":"89"}]}}
+{"docid":6,"doctext":"Saturn takes about 10.7 hours (no one knows precisely) to rotate on its axis once - a Saturn “day” - and 29 Earth years to orbit the sun.","consolidatedScore":0.008549169247324753,"keywordsWithScores":{"rotate":0.02550915064344542,"day":0.018843244168198107},"scoresArray":[0.02550915064344542,0.018843244168198107],"keywordsSpans":{"rotate":[{"f0":"58","f1":"64"}],"day":[{"f0":"94","f1":"97"}]}}
+{"docid":2,"doctext":"Venus rotates very slowly on its axis – one day on Venus lasts 243 Earth days. The planet orbits the Sun faster than Earth, however, so one year on Venus takes only about 225 Earth days, making a Venusian day longer than its year! Venus rotates backward on its axis compared to most planets in our solar system. This means the Sun rises in the west and sets in the east, opposite of what we see on Earth.","consolidatedScore":0.007563199293944915,"keywordsWithScores":{"rotate":0.01667906003609893,"day":0.024641165450720603},"scoresArray":[0.01667906003609893,0.024641165450720603],"keywordsSpans":{"rotate":[{"f0":"6","f1":"13"},{"f0":"237","f1":"244"}],"day":[{"f0":"44","f1":"47"},{"f0":"73","f1":"77"},{"f0":"181","f1":"185"},{"f0":"205","f1":"208"}]}}
+{"docid":3,"doctext":"A day on Earth is 24 hours. Earth makes a complete orbit around the sun (a year in Earth time) in about 365 days.","consolidatedScore":0.007329614919720995,"keywordsWithScores":{"rotate":0,"day":0.04576216440848111},"scoresArray":[0,0.04576216440848111],"keywordsSpans":{"rotate":[],"day":[{"f0":"2","f1":"5"},{"f0":"108","f1":"112"}]}}
+{"docid":4,"doctext":"One day on Mars takes a little over 24 hours. Mars makes a complete orbit around the Sun (a year in Martian time) in 687 Earth days.","consolidatedScore":0.006840973925072928,"keywordsWithScores":{"rotate":0,"day":0.042711353447915705},"scoresArray":[0,0.042711353447915705],"keywordsSpans":{"rotate":[],"day":[{"f0":"4","f1":"7"},{"f0":"127","f1":"131"}]}}
+{"docid":10,"doctext":"Ceres completes one rotation around its axis every 9 hours. Ceres takes 1,682 Earth days, or 4.6 Earth years, to make one trip around the sun.","consolidatedScore":0.003420486962536464,"keywordsWithScores":{"rotate":0,"day":0.021355676723957853},"scoresArray":[0,0.021355676723957853],"keywordsSpans":{"rotate":[],"day":[{"f0":"84","f1":"88"}]}}
+{"docid":12,"doctext":"Haumea takes 285 Earth years to make one trip around the Sun. As Haumea orbits the Sun, it completes one rotation every 4 hours, making it one of the fastest rotating large objects in our solar system. It is possible a massive impact billions of years ago set off Haumea's spin and created its moons. ","consolidatedScore":0.002541312777472266,"keywordsWithScores":{"rotate":0.011720420565907356,"day":0},"scoresArray":[0.011720420565907356,0],"keywordsSpans":{"rotate":[{"f0":"158","f1":"166"}],"day":[]}}
+{"docid":11,"doctext":"Eris takes 557 Earth years to make one trip around the Sun. The plane of Eris' orbit is well out of the plane of the solar system's planets and extends far beyond the Kuiper Belt, a zone of icy debris beyond the orbit of Neptune. As Eris orbits the Sun, it completes one rotation every 25.9 hours, making its day length similar to ours. ","consolidatedScore":0.0013501922220538675,"keywordsWithScores":{"rotate":0,"day":0.008429872391035995},"scoresArray":[0,0.008429872391035995],"keywordsSpans":{"rotate":[],"day":[{"f0":"309","f1":"312"}]}}
+
+
+
+ ----------------------------------------- http://localhost:8083/search/multiterm?collection=planets&keywords=orbit,hour&bylemma=true ------------------------------------------------------- 
+
+{"docid":3,"doctext":"A day on Earth is 24 hours. Earth makes a complete orbit around the sun (a year in Earth time) in about 365 days.","consolidatedScore":0.008375235167247612,"keywordsWithScores":{"orbit":0.024458762915871877,"hour":0.024458762915871877},"scoresArray":[0.024458762915871877,0.024458762915871877],"keywordsSpans":{"orbit":[{"f0":"51","f1":"56"}],"hour":[{"f0":"21","f1":"26"}]}}
+{"docid":8,"doctext":"Neptune takes about 16 hours to rotate once (a Neptunian day), and about 165 Earth years to orbit the sun (a Neptunian year).","consolidatedScore":0.008375235167247612,"keywordsWithScores":{"orbit":0.024458762915871877,"hour":0.024458762915871877},"scoresArray":[0.024458762915871877,0.024458762915871877],"keywordsSpans":{"orbit":[{"f0":"92","f1":"97"}],"hour":[{"f0":"23","f1":"28"}]}}
+{"docid":4,"doctext":"One day on Mars takes a little over 24 hours. Mars makes a complete orbit around the Sun (a year in Martian time) in 687 Earth days.","consolidatedScore":0.00781688615609777,"keywordsWithScores":{"orbit":0.022828178721480418,"hour":0.022828178721480418},"scoresArray":[0.022828178721480418,0.022828178721480418],"keywordsSpans":{"orbit":[{"f0":"68","f1":"73"}],"hour":[{"f0":"39","f1":"44"}]}}
+{"docid":5,"doctext":"Jupiter rotates once about every 10 hours (a Jovian day), but takes about 12 Earth years to complete one orbit of the Sun (a Jovian year).","consolidatedScore":0.00732833077134166,"keywordsWithScores":{"orbit":0.021401417551387893,"hour":0.021401417551387893},"scoresArray":[0.021401417551387893,0.021401417551387893],"keywordsSpans":{"orbit":[{"f0":"105","f1":"110"}],"hour":[{"f0":"36","f1":"41"}]}}
+{"docid":6,"doctext":"Saturn takes about 10.7 hours (no one knows precisely) to rotate on its axis once - a Saturn “day” - and 29 Earth years to orbit the sun.","consolidatedScore":0.006897252490674503,"keywordsWithScores":{"orbit":0.02014251063660037,"hour":0.02014251063660037},"scoresArray":[0.02014251063660037,0.02014251063660037],"keywordsSpans":{"orbit":[{"f0":"123","f1":"128"}],"hour":[{"f0":"24","f1":"29"}]}}
+{"docid":11,"doctext":"Eris takes 557 Earth years to make one trip around the Sun. The plane of Eris' orbit is well out of the plane of the solar system's planets and extends far beyond the Kuiper Belt, a zone of icy debris beyond the orbit of Neptune. As Eris orbits the Sun, it completes one rotation every 25.9 hours, making its day length similar to ours. ","consolidatedScore":0.006171225912708766,"keywordsWithScores":{"orbit":0.027033369538595232,"hour":0.009011123179531743},"scoresArray":[0.027033369538595232,0.009011123179531743],"keywordsSpans":{"orbit":[{"f0":"79","f1":"84"},{"f0":"212","f1":"217"},{"f0":"238","f1":"244"}],"hour":[{"f0":"291","f1":"296"}]}}
+{"docid":9,"doctext":"A year on Pluto is 248 Earth years. A day on Pluto lasts 153 hours, or about 6 Earth days.","consolidatedScore":0.004885553847561106,"keywordsWithScores":{"orbit":0,"hour":0.028535223401850524},"scoresArray":[0,0.028535223401850524],"keywordsSpans":{"orbit":[],"hour":[{"f0":"61","f1":"66"}]}}
+{"docid":7,"doctext":"Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). Like Venus, Uranus rotates east to west. But Uranus is unique in that it rotates on its side.","consolidatedScore":0.004342714531165428,"keywordsWithScores":{"orbit":0.012682321511933565,"hour":0.012682321511933565},"scoresArray":[0.012682321511933565,0.012682321511933565],"keywordsSpans":{"orbit":[{"f0":"100","f1":"105"}],"hour":[{"f0":"22","f1":"27"}]}}
+{"docid":10,"doctext":"Ceres completes one rotation around its axis every 9 hours. Ceres takes 1,682 Earth days, or 4.6 Earth years, to make one trip around the sun.","consolidatedScore":0.003908443078048885,"keywordsWithScores":{"orbit":0,"hour":0.022828178721480418},"scoresArray":[0,0.022828178721480418],"keywordsSpans":{"orbit":[],"hour":[{"f0":"53","f1":"58"}]}}
+{"docid":12,"doctext":"Haumea takes 285 Earth years to make one trip around the Sun. As Haumea orbits the Sun, it completes one rotation every 4 hours, making it one of the fastest rotating large objects in our solar system. It is possible a massive impact billions of years ago set off Haumea's spin and created its moons. ","consolidatedScore":0.003169007901120718,"keywordsWithScores":{"orbit":0.00925466704924882,"hour":0.00925466704924882},"scoresArray":[0.00925466704924882,0.00925466704924882],"keywordsSpans":{"orbit":[{"f0":"72","f1":"78"}],"hour":[{"f0":"122","f1":"127"}]}}
+{"docid":1,"doctext":"One day on Mercury (the time it takes for Mercury to rotate or spin once with respect to the stars) takes 59 Earth days. One day-night cycle on Mercury takes 175.97 Earth days. Mercury makes a complete orbit around the Sun (a year in Mercury time) in just 88 Earth days.","consolidatedScore":0.0018911821345397831,"keywordsWithScores":{"orbit":0.011045892929748589,"hour":0},"scoresArray":[0.011045892929748589,0],"keywordsSpans":{"orbit":[{"f0":"202","f1":"207"}],"hour":[]}}
+{"docid":2,"doctext":"Venus rotates very slowly on its axis – one day on Venus lasts 243 Earth days. The planet orbits the Sun faster than Earth, however, so one year on Venus takes only about 225 Earth days, making a Venusian day longer than its year! Venus rotates backward on its axis compared to most planets in our solar system. This means the Sun rises in the west and sets in the east, opposite of what we see on Earth.","consolidatedScore":0.0011274355032833323,"keywordsWithScores":{"orbit":0.006585051554273198,"hour":0},"scoresArray":[0.006585051554273198,0],"keywordsSpans":{"orbit":[{"f0":"90","f1":"96"}],"hour":[]}}
+
+
+
+ ----------------------------------------- http://localhost:8083/search/multiterm?collection=planets&keywords=orbit,hour,axis&bylemma=true ------------------------------------------------------- 
+
+{"docid":6,"doctext":"Saturn takes about 10.7 hours (no one knows precisely) to rotate on its axis once - a Saturn “day” - and 29 Earth years to orbit the sun.","consolidatedScore":0.014177757875380927,"keywordsWithScores":{"orbit":0.02014251063660037,"hour":0.02014251063660037,"axis":0.04111588260800111},"scoresArray":[0.02014251063660037,0.02014251063660037,0.04111588260800111],"keywordsSpans":{"orbit":[{"f0":"123","f1":"128"}],"hour":[{"f0":"24","f1":"29"}],"axis":[{"f0":"72","f1":"76"}]}}
+{"docid":10,"doctext":"Ceres completes one rotation around its axis every 9 hours. Ceres takes 1,682 Earth days, or 4.6 Earth years, to make one trip around the sun.","consolidatedScore":0.013462496873399126,"keywordsWithScores":{"orbit":0,"hour":0.022828178721480418,"axis":0.04659800028906792},"scoresArray":[0,0.022828178721480418,0.04659800028906792],"keywordsSpans":{"orbit":[],"hour":[{"f0":"53","f1":"58"}],"axis":[{"f0":"40","f1":"44"}]}}
+{"docid":2,"doctext":"Venus rotates very slowly on its axis – one day on Venus lasts 243 Earth days. The planet orbits the Sun faster than Earth, however, so one year on Venus takes only about 225 Earth days, making a Venusian day longer than its year! Venus rotates backward on its axis compared to most planets in our solar system. This means the Sun rises in the west and sets in the east, opposite of what we see on Earth.","consolidatedScore":0.007015201450413173,"keywordsWithScores":{"orbit":0.006585051554273198,"hour":0,"axis":0.026883461705231496},"scoresArray":[0.006585051554273198,0,0.026883461705231496],"keywordsSpans":{"orbit":[{"f0":"90","f1":"96"}],"hour":[],"axis":[{"f0":"33","f1":"37"},{"f0":"261","f1":"265"}]}}
+{"docid":3,"doctext":"A day on Earth is 24 hours. Earth makes a complete orbit around the sun (a year in Earth time) in about 365 days.","consolidatedScore":0.005583490111498408,"keywordsWithScores":{"orbit":0.024458762915871877,"hour":0.024458762915871877,"axis":0},"scoresArray":[0.024458762915871877,0.024458762915871877,0],"keywordsSpans":{"orbit":[{"f0":"51","f1":"56"}],"hour":[{"f0":"21","f1":"26"}],"axis":[]}}
+{"docid":8,"doctext":"Neptune takes about 16 hours to rotate once (a Neptunian day), and about 165 Earth years to orbit the sun (a Neptunian year).","consolidatedScore":0.005583490111498408,"keywordsWithScores":{"orbit":0.024458762915871877,"hour":0.024458762915871877,"axis":0},"scoresArray":[0.024458762915871877,0.024458762915871877,0],"keywordsSpans":{"orbit":[{"f0":"92","f1":"97"}],"hour":[{"f0":"23","f1":"28"}],"axis":[]}}
+{"docid":4,"doctext":"One day on Mars takes a little over 24 hours. Mars makes a complete orbit around the Sun (a year in Martian time) in 687 Earth days.","consolidatedScore":0.005211257437398514,"keywordsWithScores":{"orbit":0.022828178721480418,"hour":0.022828178721480418,"axis":0},"scoresArray":[0.022828178721480418,0.022828178721480418,0],"keywordsSpans":{"orbit":[{"f0":"68","f1":"73"}],"hour":[{"f0":"39","f1":"44"}],"axis":[]}}
+{"docid":5,"doctext":"Jupiter rotates once about every 10 hours (a Jovian day), but takes about 12 Earth years to complete one orbit of the Sun (a Jovian year).","consolidatedScore":0.004885553847561106,"keywordsWithScores":{"orbit":0.021401417551387893,"hour":0.021401417551387893,"axis":0},"scoresArray":[0.021401417551387893,0.021401417551387893,0],"keywordsSpans":{"orbit":[{"f0":"105","f1":"110"}],"hour":[{"f0":"36","f1":"41"}],"axis":[]}}
+{"docid":11,"doctext":"Eris takes 557 Earth years to make one trip around the Sun. The plane of Eris' orbit is well out of the plane of the solar system's planets and extends far beyond the Kuiper Belt, a zone of icy debris beyond the orbit of Neptune. As Eris orbits the Sun, it completes one rotation every 25.9 hours, making its day length similar to ours. ","consolidatedScore":0.004114150608472511,"keywordsWithScores":{"orbit":0.027033369538595232,"hour":0.009011123179531743,"axis":0},"scoresArray":[0.027033369538595232,0.009011123179531743,0],"keywordsSpans":{"orbit":[{"f0":"79","f1":"84"},{"f0":"212","f1":"217"},{"f0":"238","f1":"244"}],"hour":[{"f0":"291","f1":"296"}],"axis":[]}}
+{"docid":9,"doctext":"A year on Pluto is 248 Earth years. A day on Pluto lasts 153 hours, or about 6 Earth days.","consolidatedScore":0.003257035898374071,"keywordsWithScores":{"orbit":0,"hour":0.028535223401850524,"axis":0},"scoresArray":[0,0.028535223401850524,0],"keywordsSpans":{"orbit":[],"hour":[{"f0":"61","f1":"66"}],"axis":[]}}
+{"docid":7,"doctext":"Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). Like Venus, Uranus rotates east to west. But Uranus is unique in that it rotates on its side.","consolidatedScore":0.002895143020776952,"keywordsWithScores":{"orbit":0.012682321511933565,"hour":0.012682321511933565,"axis":0},"scoresArray":[0.012682321511933565,0.012682321511933565,0],"keywordsSpans":{"orbit":[{"f0":"100","f1":"105"}],"hour":[{"f0":"22","f1":"27"}],"axis":[]}}
+{"docid":12,"doctext":"Haumea takes 285 Earth years to make one trip around the Sun. As Haumea orbits the Sun, it completes one rotation every 4 hours, making it one of the fastest rotating large objects in our solar system. It is possible a massive impact billions of years ago set off Haumea's spin and created its moons. ","consolidatedScore":0.0021126719340804788,"keywordsWithScores":{"orbit":0.00925466704924882,"hour":0.00925466704924882,"axis":0},"scoresArray":[0.00925466704924882,0.00925466704924882,0],"keywordsSpans":{"orbit":[{"f0":"72","f1":"78"}],"hour":[{"f0":"122","f1":"127"}],"axis":[]}}
+{"docid":1,"doctext":"One day on Mercury (the time it takes for Mercury to rotate or spin once with respect to the stars) takes 59 Earth days. One day-night cycle on Mercury takes 175.97 Earth days. Mercury makes a complete orbit around the Sun (a year in Mercury time) in just 88 Earth days.","consolidatedScore":0.0012607880896931887,"keywordsWithScores":{"orbit":0.011045892929748589,"hour":0,"axis":0},"scoresArray":[0.011045892929748589,0,0],"keywordsSpans":{"orbit":[{"f0":"202","f1":"207"}],"hour":[],"axis":[]}}
+
+
+
+ ----------------------------------------- http://localhost:8083/search/phonetic?collection=planets&pronounced=Cherress&algo=soundex ------------------------------------------------------- 
+
+{"freq":2,"docId":10,"docText":"Ceres completes one rotation around its axis every 9 hours. Ceres takes 1,682 Earth days, or 4.6 Earth years, to make one trip around the sun."}
+
+
+
+ ----------------------------------------- http://localhost:8083/search/phonetic?collection=planets&pronounced=Veenuz&algo=soundex ------------------------------------------------------- 
+
+{"freq":4,"docId":2,"docText":"Venus rotates very slowly on its axis – one day on Venus lasts 243 Earth days. The planet orbits the Sun faster than Earth, however, so one year on Venus takes only about 225 Earth days, making a Venusian day longer than its year! Venus rotates backward on its axis compared to most planets in our solar system. This means the Sun rises in the west and sets in the east, opposite of what we see on Earth."}
+{"freq":1,"docId":7,"docText":"Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). Like Venus, Uranus rotates east to west. But Uranus is unique in that it rotates on its side."}
+
+
+
+ ----------------------------------------- http://localhost:8083/search/phonetic?collection=planets&pronounced=Serris&algo=metaphone ------------------------------------------------------- 
+
+{"freq":2,"docId":10,"docText":"Ceres completes one rotation around its axis every 9 hours. Ceres takes 1,682 Earth days, or 4.6 Earth years, to make one trip around the sun."}
+
+
+
+ ----------------------------------------- http://localhost:8083/search/phonetic?collection=planets&pronounced=Gioveen&algo=metaphone ------------------------------------------------------- 
+
+{"freq":2,"docId":5,"docText":"Jupiter rotates once about every 10 hours (a Jovian day), but takes about 12 Earth years to complete one orbit of the Sun (a Jovian year)."}
+
+
+
+ =================== FINISHED SEARCH COLLECTION 
+
+
+
+ =========================================== DEMO 2 SUCCEEDED 
+
+
