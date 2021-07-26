@@ -1,5 +1,5 @@
 
-## Prototyping a Spring Boot application for a Text Search Engine built from scratch
+### Prototyping a Spring Boot application for a Text Search Engine built from scratch
 
 #### Author: Camelia Ciolac
 
@@ -22,6 +22,8 @@ To accomplish this, this project uses:
 #### Layered architecture:
 
 **Controllers:**
+
+See Javadocs online at https://camelia-c.github.io/springboot-searchengine/apidocs/index.html
 
 RestControllers are in charge with the REST API endpoints:  
 
