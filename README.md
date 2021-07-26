@@ -23,7 +23,7 @@ To accomplish this, this project uses:
 
 **Controllers:**
 
-See Javadocs online at https://camelia-c.github.io/springboot-searchengine/apidocs/index.html
+See Javadocs online at [https://camelia-c.github.io/springboot-searchengine/apidocs/index.html](https://camelia-c.github.io/springboot-searchengine/apidocs/index.html){:target="_blank"}
 
 RestControllers are in charge with the REST API endpoints:  
 
