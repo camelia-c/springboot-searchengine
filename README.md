@@ -129,3 +129,8 @@ cd bash_scripts
 
 The results are included in the folder: `bash_scripts/outputs/` and each demo was executed independently (i.e. server restarted).  
 
+
+
+### Github Actions 
+
+A CI pipeline is configured to automatically build a Docker image and push it to GitHub Container Registry 
