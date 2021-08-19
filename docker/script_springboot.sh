@@ -1,3 +1,7 @@
 #!/bin/bash
 
-java -Dserver.port=8083 -jar app.jar
+pwd
+
+ls -alh
+
+java -Dserver.port=8083 -jar /home/root/searchengine/docker/app.jar
