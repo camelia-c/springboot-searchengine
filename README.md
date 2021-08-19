@@ -134,3 +134,98 @@ The results are included in the folder: `bash_scripts/outputs/` and each demo wa
 ### Github Actions 
 
 A CI pipeline is configured to automatically build a Docker image and push it to GitHub Container Registry 
+
+
+![example workflow](https://github.com/camelia-c/springboot-searchengine/actions/workflows/main.yml/badge.svg)
+
+Quickstart using it:
+
+```
+docker pull ghcr.io/camelia-c/sbsearchengine:latest
+
+----------------------
+latest: Pulling from camelia-c/sbsearchengine
+1cfaf5c6f756: Pull complete 
+c4099a935a96: Pull complete 
+f6e2960d8365: Pull complete 
+dffd4e638592: Pull complete 
+a60431b16af7: Pull complete 
+a45752549bd6: Pull complete 
+cb487dd08887: Pull complete 
+9ddfda12b5e0: Pull complete 
+e166b6ce3eaf: Pull complete 
+db0cfa8d9d4c: Pull complete 
+c7ea787c95f6: Pull complete 
+Digest: sha256:0a11c87f8d3eede3cf17de6a6e204c5ae484f45c9be5fed22eb9c44a633acc0a
+Status: Downloaded newer image for ghcr.io/camelia-c/sbsearchengine:latest
+--------------------------
+
+
+docker image ls | grep "sbsearchengine"
+
+-------------------------------------
+ghcr.io/camelia-c/sbsearchengine                latest              5e313c2fb087        10 minutes ago      831MB
+-------------------------------------
+
+
+#launch container with port forwarding
+
+docker run --name sbappcont --detach -p 8083:8083 ghcr.io/camelia-c/sbsearchengine:latest
+
+
+docker ps
+
+---------------------------------
+f75f7d93936c        ghcr.io/camelia-c/sbsearchengine:latest   "/home/root/searchen…"   19 seconds ago      Up 7 seconds        0.0.0.0:8083->8083/tcp   sbappcont
+--------------------------------
+
+docker logs sbappcont
+
+---------------------------------
+/home/root/searchengine
+total 32K
+drwxr-xr-x 9 root root 4.0K Aug 19 16:52 .
+drwxr-xr-x 6 root root 4.0K Aug 19 16:52 ..
+drwxr-xr-x 8 root root 4.0K Aug 19 16:52 .git
+drwxr-xr-x 3 root root 4.0K Aug 19 16:52 .github
+-rw-r--r-- 1 root root 4.3K Aug 19 16:52 README.md
+drwxr-xr-x 2 root root 4.0K Aug 19 16:52 docker
+drwxr-xr-x 6 root root 4.0K Aug 19 16:52 rest-service
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.8)
+
+
+.....
+.....
+.....
+.....
+.....
+.....
+---------------------------------
+
+
+
+# check that the port 8083 is open
+nmap -p 8083 localhost
+
+
+```
+
+
+Now we can use one of the demo use cases, for example the planets related one:
+
+```
+wget --no-check-certificate --content-disposition  https://raw.githubusercontent.com/camelia-c/springboot-searchengine/master/rest-service/bash_scripts/script_planets.sh
+wget --no-check-certificate --content-disposition  https://raw.githubusercontent.com/camelia-c/springboot-searchengine/master/rest-service/bash_scripts/script_functions.sh
+
+chmod +x script_planets.sh
+chmod +x script_functions.sh
+
+./script_planets.sh > demo_output.txt
+```
