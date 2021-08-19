@@ -46,7 +46,7 @@ public class IngestionService {
     public IngestionService(){
         // --- related to corenlp
         //disable logging 
-        RedwoodConfiguration.empty2();    
+        //RedwoodConfiguration.empty2();    
 
         Properties props = new Properties();
         // set the list of annotators to run - tokenizer and sentences splits

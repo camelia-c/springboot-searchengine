@@ -1,0 +1,33 @@
+FROM openjdk:8
+
+#Java base image, see https://hub.docker.com/_/openjdk
+#see also https://spring.io/guides/topicals/spring-boot-docker/
+
+RUN mkdir -p /home/root/searchengine
+
+WORKDIR /home/root/searchengine
+
+#check that it was set to /home/root/searchengine
+RUN pwd
+
+COPY ./ /home/root/searchengine/
+
+RUN ls -alh
+
+#build project
+RUN cd rest-service && \
+   ./mvnw clean package && \
+    pwd && \
+    cp target/rest-service-0.0.1-SNAPSHOT.jar ../docker/app.jar
+
+
+RUN cd docker && \
+    ls -alh  && \
+    chmod 777 script_springboot.sh
+
+#expose port
+EXPOSE 8083
+
+#execute wrapper script
+ENTRYPOINT ["/home/root/searchengine/docker/script_springboot.sh"]
+
